@@ -26,5 +26,4 @@ if __name__ == "__main__":
         conn = connect_to_cluster()
 
     except ApiException as error:
-        raise ApiException(f"Please check the credentials of K8s cluster! \n" \
-                           f"ERROR: {error}")
+        raise ApiException(f"ERROR: {error}")
