@@ -26,4 +26,4 @@ if __name__ == "__main__":
         conn = connect_to_cluster()
 
     except ApiException as error:
-        raise ApiException(f"ERROR: {error}")
+        raise ApiException("ERROR: " % error)
